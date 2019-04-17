@@ -62,10 +62,10 @@ docker-compose up
 * [WordPress](https://wordpress.org/download/) - Content Management System
 * [Underscores Theme](https://www.underscores.me/) - Parent Theme
 
-## Authors
+## Contributors
 
-* **Isabelle Carlsson** - *Initial work* - [IsabelleCarlsson](https://github.com/IsabelleCarlsson)
-* **Brandon Johns** - *Role* - [BrandonJohns](https://github.com/BrandonJohns)
-* **Jane Ganzan** - *Role* - [janeGzan](https://github.com/janeGzan)
-* **Benjamin Newbould** - *Role* - [bnewbould](https://github.com/bnewbould)
-* **Connor Fitzsimmons** - *Role* - [cfitz25](https://github.com/cfitz25)
+* **Isabelle Carlsson** - [IsabelleCarlsson](https://github.com/IsabelleCarlsson)
+* **Brandon Johns** - [BrandonJohns](https://github.com/BrandonJohns)
+* **Jane Ganzan** - [janeGzan](https://github.com/janeGzan)
+* **Benjamin Newbould** - [bnewbould](https://github.com/bnewbould)
+* **Connor Fitzsimmons** - [cfitz25](https://github.com/cfitz25)
