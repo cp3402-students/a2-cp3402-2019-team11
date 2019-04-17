@@ -18,19 +18,37 @@ Give examples
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+Linux instructions:
+Update package manager
 
 ```
-Give the example
+sudo apt-get update
 ```
 
-And repeat
+Install docker.io
 
 ```
-until finished
+sudo apt install docker.io
+```
+Install docker compose
+
+```
+sudo apt install docker-compose
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+clone from repository
+
+```
+git clone https://github.com/cp3402-students/a2-cp3402-2019-team11.git
+```
+
+
+start docker environment
+
+```
+sudo docker-compose up
+```
+wordpress site will be live at localhost:8000
 
 ## Built With
 
@@ -40,7 +58,7 @@ End with an example of getting some data out of the system or using it for a lit
 ## Authors
 
 * **Isabelle Carlsson** - *Initial work* - [IsabelleCarlsson](https://github.com/IsabelleCarlsson)
-* **Person 2** - *Role* - [GitHub Name](https://github.com/...)
+* **Brandon Johns** - *Role* - [GitHub Name](https://github.com/...)
 * **Person 3** - *Role* - [GitHub Name](https://github.com/...)
 * **Person 4** - *Role* - [GitHub Name](https://github.com/...)
 * **Person 5** - *Role* - [GitHub Name](https://github.com/...)
