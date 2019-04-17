@@ -18,7 +18,7 @@ Clone from repository
 git clone https://github.com/cp3402-students/a2-cp3402-2019-team11.git
 ```
 
-####Linux instructions:
+#### Linux instructions:
 
 Update package manager
 
@@ -44,7 +44,7 @@ start docker environment
 sudo docker-compose up
 ```
 
-####Windows instructions:
+#### Windows instructions:
 
 Download and install Docker from https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
@@ -58,7 +58,7 @@ docker-compose up
 
 * [Docker](https://www.docker.com/) - Development enviroment
 * [WordPress](https://wordpress.org/download/) - Content Management System
-* [Underscores Thee](https://www.underscores.me/) - Parent Theme
+* [Underscores Theme](https://www.underscores.me/) - Parent Theme
 
 ## Authors
 
