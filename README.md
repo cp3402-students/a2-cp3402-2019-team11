@@ -4,7 +4,7 @@ Docker development environment to create a WordPress theme created for the purpo
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -54,6 +54,8 @@ From the docker folder, run this command:
 docker-compose up
 ```
 
+#### Access via http://localhost:8000/
+
 ## Built With
 
 * [Docker](https://www.docker.com/) - Development enviroment
@@ -63,9 +65,7 @@ docker-compose up
 ## Authors
 
 * **Isabelle Carlsson** - *Initial work* - [IsabelleCarlsson](https://github.com/IsabelleCarlsson)
-* **Brandon Johns** - *Role* - [GitHub Name](https://github.com/...)
-* **Person 3** - *Role* - [GitHub Name](https://github.com/...)
-* **Person 4** - *Role* - [GitHub Name](https://github.com/...)
-* **Person 5** - *Role* - [GitHub Name](https://github.com/...)
-
-
+* **Brandon Johns** - *Role* - [BrandonJohns](https://github.com/BrandonJohns)
+* **Jane Ganzan** - *Role* - [janeGzan](https://github.com/janeGzan)
+* **Benjamin Newbould** - *Role* - [bnewbould](https://github.com/bnewbould)
+* **Connor Fitzsimmons** - *Role* - [cfitz25](https://github.com/cfitz25)
