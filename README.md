@@ -8,17 +8,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* [Docker](https://www.docker.com/)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Clone from repository
 
-Linux instructions:
+```
+git clone https://github.com/cp3402-students/a2-cp3402-2019-team11.git
+```
+
+####Linux instructions:
 
 Update package manager
 
@@ -31,29 +31,33 @@ Install docker.io
 ```
 sudo apt install docker.io
 ```
+
 Install docker compose
 
 ```
 sudo apt install docker-compose
 ```
 
-clone from repository
-
-```
-git clone https://github.com/cp3402-students/a2-cp3402-2019-team11.git
-```
-
-
 start docker environment
 
 ```
 sudo docker-compose up
 ```
-wordpress site will be live at localhost:8000
+
+####Windows instructions:
+
+Download and install Docker from https://hub.docker.com/editions/community/docker-ce-desktop-windows
+
+From the docker folder, run this command:
+
+```
+docker-compose up
+```
 
 ## Built With
 
 * [Docker](https://www.docker.com/) - Development enviroment
+* [WordPress](https://wordpress.org/download/) - Content Management System
 * [Underscores Thee](https://www.underscores.me/) - Parent Theme
 
 ## Authors
