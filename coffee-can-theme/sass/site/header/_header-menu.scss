@@ -31,7 +31,10 @@
 
   ul li ul li {
     clear: both;
-    width: 100%;
+  }
+
+  ul li ul li:not(:last-child){
+    border-bottom: $color__menu-sub_separators 1px solid;
   }
 //the code lasts up to here. Needs to be put in the correct areas
   ul {
@@ -73,7 +76,6 @@
 
   li {
     position:relative;
-    margin-left: 70px;
     display: block;
     transition-duration: 0.5s;
   }
@@ -82,8 +84,7 @@
     display: inline-block;
     width: 100%;
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
+    color: $color__menu-text;
     text-transform: uppercase;
     box-sizing: border-box;
     transition: all 500ms ease;
@@ -92,7 +93,7 @@
   a:hover{
     background: $color__link-hover;
     color: #ffffff;
-    box-shadow: inset 0 0 0 3px $color__link-box;
+    box-shadow: inset 0 0 0 3px $color__menu-box;
   }
 
 

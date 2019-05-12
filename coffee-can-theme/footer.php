@@ -15,9 +15,9 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<span>
+			<span class="copyright">
 				<?php
-				printf( esc_html__( 'The Coffee Can © 2019', 'coffee-can-theme' ));
+				printf( esc_html__( 'The Coffee Can © %s', 'coffee-can-theme' ), date("Y"));
 				?>
 			</span>
 		</div><!-- .site-info -->

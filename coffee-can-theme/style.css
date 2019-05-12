@@ -1,10 +1,12 @@
 /*!
 Theme Name: Coffee Can Theme
 Theme URI: http://underscores.me/
-Author: Underscores.me
+Author: CP3402 Team 11
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0.0
+Version: 1.0.1
+GitHub Theme URI: https://github.com/cp3402-students/a2-cp3402-2019-team11
+GitHub Branch:    master
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: coffee-can-theme
@@ -840,7 +842,9 @@ Header Menu
 }
 .main-navigation ul li ul li {
   clear: both;
-  width: 100%;
+}
+.main-navigation ul li ul li:not(:last-child) {
+  border-bottom: #848484 1px solid;
 }
 .main-navigation ul {
   display: none;
@@ -872,7 +876,6 @@ Header Menu
 }
 .main-navigation li {
   position: relative;
-  margin-left: 70px;
   display: block;
   transition-duration: 0.5s;
 }
@@ -880,8 +883,7 @@ Header Menu
   display: inline-block;
   width: 100%;
   text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+  color: #ffffff;
   text-transform: uppercase;
   box-sizing: border-box;
   transition: all 500ms ease;
