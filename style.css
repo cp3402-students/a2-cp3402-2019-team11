@@ -945,7 +945,7 @@ button.dropdown-toggle {
 
 .post,
 .page {
-  margin: 0;
+  margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {
