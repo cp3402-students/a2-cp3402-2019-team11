@@ -62,4 +62,13 @@
 			} );
 		} );
 	} );
+	wp.customize( 'submenu_background', function( value ) {
+		value.bind( function( to ) {
+			$( '.main-navigation ul li:hover > ul, .main-navigation ul li ul:hover' ).css( {
+				'background-color': to
+			} );
+		} );
+	} );
+
+
 } )( jQuery );

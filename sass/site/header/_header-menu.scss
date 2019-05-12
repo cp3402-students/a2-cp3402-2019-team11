@@ -22,7 +22,7 @@
 
   ul li:hover > ul,
   ul li ul:hover {
-    background-color: #2a63ff;
+    background-color: $color__submenu;
     visibility: visible;
     opacity: 1;
     display: block;
