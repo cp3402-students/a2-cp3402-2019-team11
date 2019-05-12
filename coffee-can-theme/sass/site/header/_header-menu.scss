@@ -15,7 +15,7 @@
     opacity: 0;
     position: absolute;
     transition: all 0.5s ease;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     left: 0;
     display: none;
   }
@@ -105,7 +105,6 @@
 
   .menu-item-has-children,
   .page_item_has_children {
-    min-width: 218px;
   }
   .menu-item-has-children > a,
   .page_item_has_children > a {
@@ -156,7 +155,7 @@ button.dropdown-toggle {
           padding-left: 0;
 
           a {
-            width: 218px;
+            width: 100%;
             background: none;
           }
         }

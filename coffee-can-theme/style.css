@@ -828,7 +828,7 @@ Header Menu
   opacity: 0;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   left: 0;
   display: none;
 }
@@ -893,10 +893,6 @@ Header Menu
   color: #ffffff;
   box-shadow: inset 0 0 0 3px #fff;
 }
-.main-navigation .menu-item-has-children,
-.main-navigation .page_item_has_children {
-  min-width: 218px;
-}
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a {
   padding-right: 2em;
@@ -940,7 +936,7 @@ button.dropdown-toggle {
     padding-left: 0;
   }
   .main-navigation ul ul li a {
-    width: 218px;
+    width: 100%;
     background: none;
   }
   .main-navigation ul li a {
