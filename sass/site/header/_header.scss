@@ -12,22 +12,8 @@
   }
 }
 
-.site-branding {
-  display: flex;
-  min-height: 65px;
-  margin-left: 5%;
-}
-
 .custom-logo-link {
-  //Logo shadow
   margin-right: 20px;
-  height: 80px;
-  width: 80px;
-  img {
-    height: 65px;
-    width: auto;
-    float: left;
-  }
 }
 
 .site-branding__text {
@@ -35,7 +21,6 @@
   flex-direction: column;
   justify-content: center;
   height: 65px;
-
 }
 
 .site-title {
