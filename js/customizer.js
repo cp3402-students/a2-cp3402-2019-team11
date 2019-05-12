@@ -69,6 +69,12 @@
 			} );
 		} );
 	} );
-
+	wp.customize( 'footer_background', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-footer' ).css( {
+				'background-color': to
+			} );
+		} );
+	} );
 
 } )( jQuery );

@@ -37,6 +37,20 @@ function coffee_can_theme_customize_register( $wp_customize ) {
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
+    $wp_customize->add_setting('submenu_background', array(
+        'default' => '#2a63ff',
+        'transport' => 'postMessage',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+
+    $wp_customize->add_setting('footer_background', array(
+        'default' => '#FADA5E',
+        'transport' => 'postMessage',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+
 
     //custom controls
     $wp_customize->add_control(
@@ -79,6 +93,16 @@ function coffee_can_theme_customize_register( $wp_customize ) {
                 'label' => __('Submenu background colour', 'coffee-can-theme'),
                 'section' => 'colors',
                 'settings' => 'submenu_background'
+            )
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'footer_background', array(
+                'label' => __('Footer background colour', 'coffee-can-theme'),
+                'section' => 'colors',
+                'settings' => 'footer_background'
             )
         )
     );
@@ -136,6 +160,8 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
         $body_fg_color = get_theme_mod('body_foreground');
         $main_text_color = get_theme_mod('main_text');
         $submenu_bg_color = get_theme_mod('submenu_background');
+        $footer_bg_color = get_theme_mod('footer_background');
+
         /*
          * If no custom options for text are set, let's bail.
          * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
@@ -205,6 +231,15 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
             <style type="text/css">
                 .main-navigation ul li:hover > ul, .main-navigation ul li ul:hover {
                     background-color: <?php echo esc_attr($submenu_bg_color); ?>;
+                }
+            </style>
+            <?php
+        }
+
+        if('#FADA5E' != $footer_bg_color) { ?>
+            <style type="text/css">
+                .site-footer {
+                    background-color: <?php echo esc_attr($footer_bg_color); ?>;
                 }
             </style>
             <?php

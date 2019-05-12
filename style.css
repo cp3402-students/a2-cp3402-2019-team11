@@ -991,11 +991,11 @@ button.dropdown-toggle {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-  margin: 0 10%;
+  margin: 0;
   padding: 1em 2em;
   color: #fff;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  background: #FFD300;
+  background: #FADA5E;
   text-align: center;
 }
 
