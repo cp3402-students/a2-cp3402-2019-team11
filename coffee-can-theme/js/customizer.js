@@ -39,4 +39,27 @@
 			}
 		} );
 	} );
+
+	//customization visualizers
+	wp.customize( 'header_background', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-header' ).css( {
+				'background-color': to
+			} );
+		} );
+	} );
+	wp.customize( 'body_foreground', function( value ) {
+		value.bind( function( to ) {
+			$( '.content-area' ).css( {
+				'background-color': to
+			} );
+		} );
+	} );
+	wp.customize( 'main_text', function( value ) {
+		value.bind( function( to ) {
+			$( 'body, button, input, select, optgroup, textarea' ).css( {
+				'color': to
+			} );
+		} );
+	} );
 } )( jQuery );
