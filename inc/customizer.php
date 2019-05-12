@@ -39,7 +39,7 @@ function coffee_can_theme_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting('submenu_background', array(
         'default' => '#2a63ff',
-        'transport' => 'postMessage',
+        'transport' => 'refresh',
         'type' => 'theme_mod',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
@@ -220,8 +220,9 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
                 input,
                 select,
                 optgroup,
-                textarea {
-                    background-color: <?php echo esc_attr($main_text_color); ?>;
+                textarea,
+                .elementor-widget-text-editor {
+                    color: <?php echo esc_attr($main_text_color); ?>;
                 }
             </style>
             <?php

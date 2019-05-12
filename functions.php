@@ -61,7 +61,7 @@ if ( ! function_exists( 'coffee_can_theme_setup' ) ) :
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'coffee_can_theme_custom_background_args', array(
-			'default-color' => 'ffffff',
+			'default-color' => '593C1F',
 			'default-image' => '',
 		) ) );
 

@@ -57,18 +57,18 @@
 	} );
 	wp.customize( 'main_text', function( value ) {
 		value.bind( function( to ) {
-			$( 'body, button, input, select, optgroup, textarea' ).css( {
+			$( 'body, button, input, select, optgroup, textarea, .elementor-widget-text-editor' ).css( {
 				'color': to
 			} );
 		} );
-	} );
+	} );/*
 	wp.customize( 'submenu_background', function( value ) {
 		value.bind( function( to ) {
-			$( '.main-navigation ul li:hover > ul, .main-navigation ul li ul:hover' ).css( {
+			$( 'ul li:hover > ul, ul li ul:hover' ).css( {
 				'background-color': to
 			} );
 		} );
-	} );
+	} );*/
 	wp.customize( 'footer_background', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-footer' ).css( {

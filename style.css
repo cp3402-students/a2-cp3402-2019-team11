@@ -743,25 +743,8 @@ a:hover, a:active {
   }
 }
 
-.site-branding {
-  display: flex;
-  min-height: 65px;
-  margin-left: 5%;
-}
-
 .custom-logo-link {
   margin-right: 20px;
-  height: 65px;
-  width: 65px;
-  border-radius: 50px;
-  -webkit-box-shadow: 2px 2px 5px 0 black;
-  -moz-box-shadow: 2px 2px 5px 0px black;
-  box-shadow: 2px 2px 5px 0px black;
-}
-.custom-logo-link img {
-  height: 65px;
-  width: auto;
-  float: left;
 }
 
 .site-branding__text {
@@ -778,7 +761,7 @@ a:hover, a:active {
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase;
-  text-shadow: 5px 3px #000000;
+  text-shadow: 2px 2px #000000;
 }
 .site-title a {
   color: white;
@@ -950,6 +933,10 @@ button.dropdown-toggle {
   margin: 0 10%;
   padding: 1em 2em;
   background: #FFD300;
+}
+
+.entry-header {
+  display: none;
 }
 
 .sticky {
