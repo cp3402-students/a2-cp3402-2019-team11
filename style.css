@@ -735,7 +735,7 @@ a:hover, a:active {
   padding: 1em;
   color: #fff;
   background-color: #FADA5E;
-  box-shadow: 0px 1px 5px black;
+  box-shadow: 0 1px 5px black;
 }
 @media screen and (min-width: 600px) {
   .site-header {
@@ -743,8 +743,21 @@ a:hover, a:active {
   }
 }
 
+.site-branding {
+  display: flex;
+  min-height: 65px;
+  margin-left: 5%;
+}
+
 .custom-logo-link {
   margin-right: 20px;
+  height: 65px;
+  width: 65px;
+}
+.custom-logo-link img {
+  height: 65px;
+  width: auto;
+  float: left;
 }
 
 .site-branding__text {
@@ -761,7 +774,7 @@ a:hover, a:active {
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 5px 3px #000000;
 }
 .site-title a {
   color: white;
