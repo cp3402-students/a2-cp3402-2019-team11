@@ -733,7 +733,6 @@ a:hover, a:active {
 .site-header {
   position: relative;
   padding: 1em;
-  color: #fff;
   background-color: #FADA5E;
   box-shadow: 0 1px 5px black;
 }
@@ -750,8 +749,8 @@ a:hover, a:active {
 
 .custom-logo-link {
   margin-right: 20px;
-  height: 65px;
-  width: 65px;
+  height: 80px;
+  width: 80px;
 }
 .site-branding__text {
   display: flex;
@@ -837,6 +836,8 @@ Header Menu
   margin: 0;
   padding-top: 5px;
   padding-left: 0;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 .main-navigation ul ul {
   display: none;
@@ -868,7 +869,7 @@ Header Menu
   display: inline-block;
   width: 100%;
   text-decoration: none;
-  color: #ffffff;
+  color: #2d2d2d;
   text-transform: uppercase;
   box-sizing: border-box;
   transition: all 500ms ease;
