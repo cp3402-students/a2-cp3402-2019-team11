@@ -15,7 +15,6 @@
 .site-branding {
   display: flex;
   min-height: 65px;
-  margin-left: 5%;
 }
 
 .custom-logo-link {
@@ -23,9 +22,7 @@
   height: 65px;
   width: 65px;
   img {
-    height: 65px;
-    width: auto;
-    float: left;
+
   }
 }
 
@@ -44,7 +41,7 @@
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase;
-  text-shadow: 5px 3px #000000;
+  text-shadow: 3px 2px #000000;
 
   a {
     color: white;
@@ -65,10 +62,6 @@
     justify-content: space-between;
   }
 
-  .site-branding {
-    width: 35%;
-    flex: 1 0 auto;
-  }
 
   .site-navigation {
     width: 55%;

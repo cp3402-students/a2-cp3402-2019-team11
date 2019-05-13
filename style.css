@@ -746,7 +746,6 @@ a:hover, a:active {
 .site-branding {
   display: flex;
   min-height: 65px;
-  margin-left: 5%;
 }
 
 .custom-logo-link {
@@ -754,12 +753,6 @@ a:hover, a:active {
   height: 65px;
   width: 65px;
 }
-.custom-logo-link img {
-  height: 65px;
-  width: auto;
-  float: left;
-}
-
 .site-branding__text {
   display: flex;
   flex-direction: column;
@@ -774,7 +767,7 @@ a:hover, a:active {
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase;
-  text-shadow: 5px 3px #000000;
+  text-shadow: 3px 2px #000000;
 }
 .site-title a {
   color: white;
@@ -794,11 +787,6 @@ a:hover, a:active {
     justify-content: space-between;
   }
 
-  .site-branding {
-    width: 35%;
-    flex: 1 0 auto;
-  }
-
   .site-navigation {
     width: 55%;
   }
@@ -812,6 +800,7 @@ Header Menu
 */
 .main-navigation {
   display: block;
+  margin: auto;
   font-weight: 400;
   clear: left;
   padding-right: 5%;
