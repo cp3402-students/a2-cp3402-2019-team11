@@ -2,7 +2,7 @@
   position: relative;
   padding: 1em;
   background-color: $color__background-header;
-  box-shadow: 0 1px 5px rgb(0,0,0,1);
+  box-shadow: 0 1px 5px rgba(0,0,0,1);
   @media screen and (min-width: $query__small) {
     padding: 1em 2em;
   }
