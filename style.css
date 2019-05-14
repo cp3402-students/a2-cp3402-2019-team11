@@ -753,6 +753,7 @@ a:hover, a:active {
   height: 80px;
   width: 80px;
 }
+
 .site-branding__text {
   display: flex;
   flex-direction: column;
@@ -767,7 +768,8 @@ a:hover, a:active {
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase;
-  text-shadow: 3px 2px #000000;
+  text-shadow: 2px 2px #000000;
+  font-family: Cooper, sans-serif;
 }
 .site-title a {
   color: white;
@@ -778,7 +780,7 @@ a:hover, a:active {
   margin: 0;
   font-size: 0.9em;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 900px) {
