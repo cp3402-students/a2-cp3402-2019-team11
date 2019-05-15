@@ -15,41 +15,15 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'coffee-can-theme' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Uh-Oh! ', 'coffee-can-theme' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'coffee-can-theme' ); ?></p>
 
-					<?php
-					get_search_form();
+					<p><?php echo "That page can&rsquo;t be found. It looks like nothing <br> was found at this location."; ?></p>
+                    <img src="<?php echo display_images_from_media_library(); ?>/images/sad-face.png"/>
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'coffee-can-theme' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$coffee_can_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'coffee-can-theme' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$coffee_can_theme_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
+                    <button onclick="location.href='<?php echo home_url(); ?>'">Back to Home</button>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
