@@ -2,6 +2,7 @@
 	margin: 0 10%;
 	padding: 1em 2em;
 	background: $color__background-content;
+	height: 100%;
 }
 
 .entry-header {
@@ -30,4 +31,14 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+#page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#content {
+	flex: 1;
 }
