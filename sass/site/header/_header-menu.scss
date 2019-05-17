@@ -112,6 +112,10 @@
   .page_item_has_children > a {
     padding-right: 2em;
   }
+
+  .current-menu-ancestor {
+    background: $color__submenu;
+  }
 }
 
 button.dropdown-toggle {

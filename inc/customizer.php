@@ -290,6 +290,10 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
                 .main-navigation ul li:hover > ul, .main-navigation ul li ul:hover {
                     background-color: <?php echo esc_attr($submenu_bg_color); ?>;
                 }
+
+                .current-menu-ancestor {
+                    background-color: <?php echo esc_attr($submenu_bg_color); ?>;
+                }
             </style>
             <?php
         }
