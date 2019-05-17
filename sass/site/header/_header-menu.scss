@@ -4,6 +4,7 @@
   font-weight: 400;
   clear: left;
   padding-right: 5%;
+  text-align:center;
 
 //Keeps the dropdown from changing the size of the header
   li:hover {
@@ -20,7 +21,8 @@
     position: absolute;
     transition: all 0.5s ease;
     margin-top: 0.8rem;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
   }
 
@@ -45,7 +47,7 @@
     display: none;
     list-style: none;
     margin: 0;
-    padding-top: 5px;
+    //padding-top: 5px;
     padding-left: 0;
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -114,7 +116,7 @@
   }
   .menu-item-has-children > a,
   .page_item_has_children > a {
-    padding-right: 2em;
+    //padding-right: 2em;
   }
 }
 
@@ -144,7 +146,7 @@ button.dropdown-toggle {
 
     .menu-item-has-children > a,
     .page_item_has_children > a {
-      padding-right: 2em;
+      //padding-right: 2em;
 
     }
 
