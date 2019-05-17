@@ -37,6 +37,13 @@ function coffee_can_theme_customize_register( $wp_customize ) {
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
+    $wp_customize->add_setting('menu_text', array(
+        'default' => '#ffffff',
+        'transport' => 'postMessage',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+
     $wp_customize->add_setting('menu_background', array(
         'default' => '#51adff',
         'transport' => 'refresh',
@@ -89,6 +96,17 @@ function coffee_can_theme_customize_register( $wp_customize ) {
                 'label' => __('Main text colour', 'coffee-can-theme'),
                 'section' => 'colors',
                 'settings' => 'main_text'
+            )
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'menu_text', array(
+                'label' => __('Menu text colour', 'coffee-can-theme'),
+                'section' => 'colors',
+                'settings' => 'menu_text'
             )
         )
     );
@@ -178,6 +196,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
         $header_bg_color = get_theme_mod('header_background');
         $body_fg_color = get_theme_mod('body_foreground');
         $main_text_color = get_theme_mod('main_text');
+        $menu_text_color = get_theme_mod('menu_text');
         $menu_bg_color = get_theme_mod('menu_background');
         $submenu_bg_color = get_theme_mod('submenu_background');
         $footer_bg_color = get_theme_mod('footer_background');
@@ -243,6 +262,15 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
                 textarea,
                 .elementor-widget-text-editor {
                     color: <?php echo esc_attr($main_text_color); ?>;
+                }
+            </style>
+            <?php
+        }
+
+        if('#2d2d2d' != $menu_text_color) { ?>
+            <style type="text/css">
+                .main-navigation a {
+                    color: <?php echo esc_attr($menu_text_color); ?>;
                 }
             </style>
             <?php

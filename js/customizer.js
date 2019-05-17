@@ -61,6 +61,13 @@
 				'color': to
 			} );
 		} );
+	} );
+	wp.customize( 'menu_text', function( value ) {
+		value.bind( function( to ) {
+			$( '.main-navigation a' ).css( {
+				'color': to
+			} );
+		} );
 	} );/*
 	wp.customize( 'submenu_background', function( value ) {
 		value.bind( function( to ) {
