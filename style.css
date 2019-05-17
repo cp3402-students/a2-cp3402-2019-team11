@@ -825,6 +825,7 @@ Header Menu
   left: 50%;
   transform: translateX(-50%);
   display: none;
+  border-radius: 5px;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li ul:hover {
@@ -861,6 +862,14 @@ Header Menu
 }
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
+}
+.main-navigation ul ul li:first-child > a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.main-navigation ul ul li:last-child > a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .main-navigation ul ul a {
   width: 1px;

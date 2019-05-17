@@ -24,6 +24,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: none;
+    border-radius: 5px;
   }
 
   ul li:hover > ul,
@@ -68,6 +69,15 @@
         &:hover > ul,
         &.focus > ul {
           left: 100%;
+        }
+
+        &:first-child > a {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+        &:last-child > a {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
         }
       }
 
