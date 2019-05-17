@@ -812,6 +812,9 @@ Header Menu
 .main-navigation li:hover {
   cursor: pointer;
 }
+.main-navigation ul li:hover > a {
+  background: #2a63ff;
+}
 .main-navigation ul li ul {
   visibility: hidden;
   opacity: 0;
@@ -887,9 +890,6 @@ Header Menu
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a {
   padding-right: 2em;
-}
-.main-navigation .current-menu-ancestor {
-  background: #2a63ff;
 }
 
 button.dropdown-toggle {

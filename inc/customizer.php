@@ -287,11 +287,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
 
         if('#2a63ff' != $submenu_bg_color) { ?>
             <style type="text/css">
-                .main-navigation ul li:hover > ul, .main-navigation ul li ul:hover {
-                    background-color: <?php echo esc_attr($submenu_bg_color); ?>;
-                }
-
-                .current-menu-ancestor {
+                .main-navigation ul li:hover > ul, .main-navigation ul li ul:hover, .main-navigation ul li:hover > a {
                     background-color: <?php echo esc_attr($submenu_bg_color); ?>;
                 }
             </style>

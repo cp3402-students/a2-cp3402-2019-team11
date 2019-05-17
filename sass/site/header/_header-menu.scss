@@ -10,6 +10,10 @@
     cursor: pointer;
   }
 
+  ul li:hover > a {
+    background: $color__submenu;
+  }
+
   ul li ul {
     visibility: hidden;
     opacity: 0;
@@ -111,10 +115,6 @@
   .menu-item-has-children > a,
   .page_item_has_children > a {
     padding-right: 2em;
-  }
-
-  .current-menu-ancestor {
-    background: $color__submenu;
   }
 }
 
