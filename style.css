@@ -926,6 +926,7 @@ button.dropdown-toggle {
   top: 0;
   background-color: #FADA5E;
   box-shadow: 0 1px 5px black;
+  z-index: 99999;
 }
 
 /*--------------------------------------------------------------

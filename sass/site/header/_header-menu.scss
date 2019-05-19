@@ -195,4 +195,5 @@ button.dropdown-toggle {
   top: 0;
   background-color: $color__background-header;
   box-shadow: 0 1px 5px rgba(0,0,0,1);
+  z-index: 99999;
 }
