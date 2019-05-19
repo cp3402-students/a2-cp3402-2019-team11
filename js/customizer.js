@@ -46,6 +46,9 @@
 			$( '.site-header' ).css( {
 				'background-color': to
 			} );
+			$( '.sticky' ).css( {
+				'background-color': to
+			});
 		} );
 	} );
 	wp.customize( 'body_foreground', function( value ) {

@@ -2,8 +2,7 @@
   display: block;
   margin: auto;
   font-weight: 400;
-  clear: left;
-  padding-right: 5%;
+  width:100%;
   text-align:center;
 
 //Keeps the dropdown from changing the size of the header
@@ -162,6 +161,7 @@ button.dropdown-toggle {
 
     ul {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
 
       ul {
@@ -188,4 +188,11 @@ button.dropdown-toggle {
     }
 
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: $color__background-header;
+  box-shadow: 0 1px 5px rgba(0,0,0,1);
 }

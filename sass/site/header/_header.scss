@@ -1,31 +1,24 @@
 .site-header {
   position: relative;
-  padding: 1em;
   background-color: $color__background-header;
+  text-align: center;
   box-shadow: 0 1px 5px rgba(0,0,0,1);
-  @media screen and (min-width: $query__small) {
-    padding: 1em 2em;
-  }
 }
 
 .site-branding {
-  display: flex;
-  min-height: 65px;
-  margin-left: 10%;
+  margin-bottom: 1em;
 }
 
 .custom-logo-link {
-  margin-right: 20px;
+  vertical-align: middle;
   height: 80px;
   width: 80px;
 }
 
 .site-branding__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 65px;
-
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: middle;
 }
 
 .site-title {
@@ -51,15 +44,10 @@
 }
 
 @media screen and (min-width: $query__medium) {
-  .site-header {
-    display: flex;
-    justify-content: space-between;
-  }
+  .site-header {}
 
 
-  .site-navigation {
-    width: 55%;
-  }
+  .site-navigation {}
 
   .site-description{
     text-transform: initial;

@@ -239,6 +239,10 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
                 .site-header {
                     background-color: <?php echo esc_attr($header_bg_color); ?>;
                 }
+
+                .sticky {
+                    background-color: <?php echo esc_attr($header_bg_color); ?>;
+                }
             </style>
         <?php
         }
