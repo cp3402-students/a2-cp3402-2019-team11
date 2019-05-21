@@ -44,6 +44,45 @@
 				<p class="site-description"><?php echo $coffee_can_theme_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
             </div>
+
+            <?php
+            $twitter = get_theme_mod('twitter','');
+            $facebook = get_theme_mod('facebook','');
+            $instagram = get_theme_mod('instagram','');
+            $youtube = get_theme_mod('youtube','');
+            $media_array = array(
+                $twitter,
+                $facebook,
+                $instagram,
+                $youtube
+            );
+
+            $hide_div = true;
+
+            foreach($media_array as $current){
+                if($current !== ''){
+                    $hide_div = false;
+                }
+            }
+            unset($current);
+            ?>
+
+            <div class="social-media<?php if($hide_div){ echo " hidden"; } ?>">
+                <?php
+                if($twitter !== ''){
+                    printf('<a href="%s" class="%s"></a>', $twitter, 'fab fa-twitter');
+                }
+                if($facebook !== ''){
+                    printf('<a href="%s" class="%s"></a>', $facebook, 'fab fa-facebook-f');
+                }
+                if($instagram !== ''){
+                    printf('<a href="%s" class="%s"></a>', $instagram, 'fab fa-instagram');
+                }
+                if($youtube !== ''){
+                    printf('<a href="%s" class="%s"></a>', $youtube, 'fab fa-youtube');
+                }
+                ?>
+            </div>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">

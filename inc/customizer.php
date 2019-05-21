@@ -144,6 +144,75 @@ function coffee_can_theme_customize_register( $wp_customize ) {
         )
     );
 
+    /*
+     social media section
+     */
+
+    $wp_customize->add_section(
+        'social-media',
+        array(
+                'title' => __('Social Media', 'coffee_can_theme'),
+                'priority' => 30,
+                'description' => __('Enter the URLs of your social media here to display them on the theme.', 'coffee_can_theme')
+        )
+    );
+
+    //Twitter
+    $wp_customize->add_setting('twitter', array('default' => ''));
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'twitter',
+            array(
+                    'label' => __('Twitter', 'coffee_can_theme'),
+                    'section' => 'social-media',
+                    'settings' => 'twitter', )
+        )
+    );
+
+    //Facebook
+    $wp_customize->add_setting('facebook', array('default' => ''));
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'facebook',
+            array(
+                'label' => __('Facebook', 'coffee_can_theme'),
+                'section' => 'social-media',
+                'settings' => 'facebook', )
+        )
+    );
+
+    //Instagram
+    $wp_customize->add_setting('instagram', array('default' => ''));
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'instagram',
+            array(
+                'label' => __('Instagram', 'coffee_can_theme'),
+                'section' => 'social-media',
+                'settings' => 'instagram', )
+        )
+    );
+
+    //YouTube
+    $wp_customize->add_setting('youtube', array('default' => ''));
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'youtube',
+            array(
+                'label' => __('YouTube', 'coffee_can_theme'),
+                'section' => 'social-media',
+                'settings' => 'youtube', )
+        )
+    );
+
+    /*
+     social media end
+     */
+
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',

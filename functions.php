@@ -122,6 +122,8 @@ add_action( 'widgets_init', 'coffee_can_theme_widgets_init' );
 function coffee_can_theme_scripts() {
 	wp_enqueue_style( 'coffee-can-theme-style', get_stylesheet_uri() );
 
+	wp_enqueue_style('load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 	wp_enqueue_script( 'coffee-can-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'coffee-can-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

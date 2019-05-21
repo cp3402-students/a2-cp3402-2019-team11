@@ -43,6 +43,38 @@
   font-weight: 600;
 }
 
+.social-media {
+  font-family: 'FontAwesome';
+  font-size: 2em;
+  float: right;
+  margin-top: .4em;
+  a {
+    text-decoration: none;
+    margin: .3em;
+  }
+
+  .fa-twitter {
+    color: #38A1F3;
+  }
+
+  .fa-facebook-f {
+    color: #3b5998;
+  }
+
+  .fa-instagram {
+    color: #5851DB;
+  }
+
+  .fa-youtube {
+    color: #ff0000;
+  }
+
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: $query__medium) {
   .site-header {}
 

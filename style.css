@@ -777,6 +777,33 @@ a:hover, a:active {
   font-weight: 600;
 }
 
+.social-media {
+  font-family: "FontAwesome";
+  font-size: 2em;
+  float: right;
+  margin-top: 0.4em;
+}
+.social-media a {
+  text-decoration: none;
+  margin: 0.3em;
+}
+.social-media .fa-twitter {
+  color: #38A1F3;
+}
+.social-media .fa-facebook-f {
+  color: #3b5998;
+}
+.social-media .fa-instagram {
+  color: #5851DB;
+}
+.social-media .fa-youtube {
+  color: #ff0000;
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 900px) {
   .site-description {
     text-transform: initial;
