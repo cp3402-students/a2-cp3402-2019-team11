@@ -17,49 +17,49 @@ function coffee_can_theme_customize_register( $wp_customize ) {
 
 	//custom settings
     $wp_customize->add_setting('header_background', array(
-        'default' => '#FADA5E',
-        'transport' => 'postMessage',
-        'type' => 'theme_mod',
-        'sanitize_callback' => 'sanitize_hex_color',
-    ));
-
-    $wp_customize->add_setting('body_foreground', array(
         'default' => '#FFD300',
         'transport' => 'postMessage',
         'type' => 'theme_mod',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
+    $wp_customize->add_setting('body_foreground', array(
+        'default' => '#FFF4E2',
+        'transport' => 'postMessage',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+
     $wp_customize->add_setting('main_text', array(
-        'default' => '#404040',
+        'default' => '#2D2D2D',
         'transport' => 'postMessage',
         'type' => 'theme_mod',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('menu_text', array(
-        'default' => '#ffffff',
+        'default' => '#FFFFFF',
         'transport' => 'postMessage',
         'type' => 'theme_mod',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('menu_background', array(
-        'default' => '#51adff',
+        'default' => '#FFBB00',
         'transport' => 'refresh',
         'type' => 'theme_mod',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('submenu_background', array(
-        'default' => '#2a63ff',
+        'default' => '#FFBB00',
         'transport' => 'refresh',
         'type' => 'theme_mod',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
     $wp_customize->add_setting('footer_background', array(
-        'default' => '#FADA5E',
+        'default' => '#FFD300',
         'transport' => 'postMessage',
         'type' => 'theme_mod',
         'sanitize_callback' => 'sanitize_hex_color',
@@ -234,7 +234,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
             <?php
         }
 
-        if('#FADA5E' != $header_bg_color) { ?>
+        if('#FFD300' != $header_bg_color) { ?>
             <style type="text/css">
                 .site-header {
                     background-color: <?php echo esc_attr($header_bg_color); ?>;
@@ -247,7 +247,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
         <?php
         }
 
-        if('#FFD300' != $body_fg_color) { ?>
+        if('#FFF4E2' != $body_fg_color) { ?>
             <style type="text/css">
                 .content-area {
                     background-color: <?php echo esc_attr($body_fg_color); ?>;
@@ -256,7 +256,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
             <?php
         }
 
-        if('#404040' != $main_text_color) { ?>
+        if('#2D2D2D' != $main_text_color) { ?>
             <style type="text/css">
                 body,
                 button,
@@ -271,7 +271,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
             <?php
         }
 
-        if('#2d2d2d' != $menu_text_color) { ?>
+        if('#FFFFFF' != $menu_text_color) { ?>
             <style type="text/css">
                 .main-navigation a {
                     color: <?php echo esc_attr($menu_text_color); ?>;
@@ -280,7 +280,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
             <?php
         }
 
-        if('#51adff' != $menu_bg_color) { ?>
+        if('#FFBB00' != $menu_bg_color) { ?>
             <style type="text/css">
                 .main-navigation a:hover {
                     background-color: <?php echo esc_attr($menu_bg_color); ?>;
@@ -289,7 +289,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
             <?php
         }
 
-        if('#2a63ff' != $submenu_bg_color) { ?>
+        if('#FFBB00' != $submenu_bg_color) { ?>
             <style type="text/css">
                 .main-navigation ul li:hover > ul, .main-navigation ul li ul:hover, .main-navigation ul li:hover > a {
                     background-color: <?php echo esc_attr($submenu_bg_color); ?>;
@@ -298,7 +298,7 @@ if ( ! function_exists( 'coffee_can_theme_header_style' ) ) :
             <?php
         }
 
-        if('#FADA5E' != $footer_bg_color) { ?>
+        if('#FFD300' != $footer_bg_color) { ?>
             <style type="text/css">
                 .site-footer {
                     background-color: <?php echo esc_attr($footer_bg_color); ?>;

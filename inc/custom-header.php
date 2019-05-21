@@ -19,7 +19,7 @@
 function coffee_can_theme_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'coffee_can_theme_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '000000',
+		'default-text-color'     => 'DD3333',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,

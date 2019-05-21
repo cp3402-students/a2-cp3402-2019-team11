@@ -71,14 +71,7 @@
 				'color': to
 			} );
 		} );
-	} );/*
-	wp.customize( 'submenu_background', function( value ) {
-		value.bind( function( to ) {
-			$( 'ul li:hover > ul, ul li ul:hover' ).css( {
-				'background-color': to
-			} );
-		} );
-	} );*/
+	} );
 	wp.customize( 'footer_background', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-footer' ).css( {

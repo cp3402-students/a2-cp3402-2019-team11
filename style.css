@@ -387,7 +387,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: #2D2D2D;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -462,7 +462,7 @@ html {
 }
 
 body {
-  background: #593C1F;
+  background: #492d13;
   /* Fallback for when there is no custom background color defined. */
   height: 100%;
 }
@@ -734,7 +734,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-header {
   position: relative;
-  background-color: #FADA5E;
+  background-color: #FFD300;
   text-align: center;
   box-shadow: 0 1px 5px black;
 }
@@ -796,7 +796,7 @@ Header Menu
   cursor: pointer;
 }
 .main-navigation ul li:hover > a {
-  background: #2a63ff;
+  background: #FFBB00;
 }
 .main-navigation ul li ul {
   visibility: hidden;
@@ -811,7 +811,7 @@ Header Menu
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li ul:hover {
-  background-color: #2a63ff;
+  background-color: #FFBB00;
   visibility: visible;
   opacity: 1;
   display: block;
@@ -869,7 +869,7 @@ Header Menu
   display: inline-block;
   width: 100%;
   text-decoration: none;
-  color: #2d2d2d;
+  color: #FFFFFF;
   text-transform: uppercase;
   box-sizing: border-box;
   transition: all 500ms ease;
@@ -924,7 +924,7 @@ button.dropdown-toggle {
 .sticky {
   position: fixed;
   top: 0;
-  background-color: #FADA5E;
+  background-color: #FFD300;
   box-shadow: 0 1px 5px black;
   z-index: 99999;
 }
@@ -935,7 +935,7 @@ button.dropdown-toggle {
 .content-area {
   margin: 0 10%;
   padding: 1em 2em;
-  background: #FFD300;
+  background: #FFF4E2;
   height: 100%;
 }
 
@@ -979,6 +979,14 @@ button.dropdown-toggle {
 
 .sticky-time {
   padding-top: 3em;
+}
+
+.event-body {
+  text-align: center;
+}
+
+.event-row {
+  border-bottom: 1px solid #cccccc;
 }
 
 /*--------------------------------------------------------------
@@ -1035,7 +1043,7 @@ button.dropdown-toggle {
   padding: 1em 2em;
   color: #fff;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-  background: #FADA5E;
+  background: #FFD300;
   text-align: center;
 }
 
