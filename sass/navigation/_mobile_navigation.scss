@@ -1,0 +1,38 @@
+.menu[aria-expanded="true"]{
+  display:inline;
+  text-align: left;
+  z-index: 99;
+  margin: 0 0 1.5em 3em;
+}
+.menu[aria-expanded="true"] li{
+  margin: 10px;
+}
+.menu[aria-expanded="true"] ul{
+  
+}
+.menu-toggle{
+ background-color: Transparent;  
+ border-color: white;
+   color: white;
+  font-weight: bold;
+  float: left;
+  margin: 10px;
+}
+.main-navigation ul ul {
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.main-navigation ul ul li a {
+    width: 100%;
+    background: none;
+}
+.main-navigation ul li a {
+    padding: 0.4em 1em;
+}
+.main-navigation ul ul a {
+    width: 1px;
+}
+.main-navigation ul{
+    
+} 

@@ -1,0 +1,60 @@
+ .event_bg {
+  /* The image used */
+ 
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+}
+
+/* Position text in the middle of the page/image */
+.event_fg {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  z-index: 99;
+  /*width: 80%;*/
+  padding: 20px;
+  text-align: center;
+/*  display: flex;
+  align-items: stretch;*/
+
+  height: 100%;
+  position: relative;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.event_details{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.event_content {
+  position: relative;
+/*   width: 150px; */
+  height: 150px;
+  padding: 10px;
+  margin: 20px;
+/*   display: table-cell; */
+  vertical-align: top;
+}
+
