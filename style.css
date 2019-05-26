@@ -1004,8 +1004,12 @@ button.dropdown-toggle {
   position: relative;
   width: 100%;
   height: auto;
+<<<<<<< HEAD
   padding: 20px 0px 20px 0px;
   margin: 20px;
+=======
+  padding: 10px 0px 10px 0px;
+>>>>>>> master
   display: table-cell;
   vertical-align: top; }
 
@@ -1014,7 +1018,11 @@ button.dropdown-toggle {
   width: 100%;
   height: auto;
   padding: 10px 0px 10px 0px;
+<<<<<<< HEAD
   margin: 20px 0px 20px 0px;
+=======
+  margin: 10px 0px 10px 0px;
+>>>>>>> master
   /*   display: table-cell; */
   vertical-align: top; }
 
