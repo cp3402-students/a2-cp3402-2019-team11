@@ -3,8 +3,8 @@
  
 
   /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 
   /* Full height */
   height: 100%;
@@ -43,7 +43,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: table-cell;
   vertical-align: top;
 }
@@ -52,8 +53,10 @@
   position: relative;
 /*   width: 150px; */
   height: 150px;
-  padding: 10px;
-  margin: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 /*   display: table-cell; */
   vertical-align: top;
 }
