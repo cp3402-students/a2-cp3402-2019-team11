@@ -966,8 +966,8 @@ button.dropdown-toggle {
 .event_bg {
   /* The image used */
   /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
   /* Full height */
   height: 100%;
   width: 100%;
@@ -1002,18 +1002,18 @@ button.dropdown-toggle {
 
 .event_details {
   position: relative;
-  width: 150px;
-  height: 150px;
-  padding: 10px;
+  width: 100%;
+  height: auto;
+  padding: 10 0 10 0;
   display: table-cell;
   vertical-align: top; }
 
 .event_content {
   position: relative;
-  /*   width: 150px; */
-  height: 150px;
-  padding: 10px;
-  margin: 20px;
+  width: 100%;
+  height: auto;
+  padding: 10 0 10 0;
+  margin: 20 0 20 0;
   /*   display: table-cell; */
   vertical-align: top; }
 
