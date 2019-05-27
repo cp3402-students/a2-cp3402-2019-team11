@@ -17,7 +17,7 @@
 		<div class="site-info">
 			<span class="copyright">
 				<?php
-				printf( esc_html__( 'The Coffee Can © %s', 'coffee-can-theme' ), date("Y"));
+				printf( esc_html__( '%s © %s', 'coffee-can-theme' ), bloginfo( 'name' ), date("Y"));
 				?>
 			</span>
 		</div><!-- .site-info -->
