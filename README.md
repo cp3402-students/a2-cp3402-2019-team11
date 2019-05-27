@@ -7,6 +7,12 @@ Requires at least: WordPress 4.5
 
 License: GNU General Public License v2 or later
 
+### Features
+Theme features stying to support:
+1. Quick Restaurant Menu plugin
+2. Events Manager plugin
+
+
 ### Installation
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
